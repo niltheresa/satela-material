@@ -1,0 +1,75 @@
+.mdl-layout__drawer-button .material-icons {
+	padding: 10px;
+}
+
+.mdl-button {
+	z-index: 1000 !important;
+}
+
+.mdl-layout__drawer {
+	z-index: 2000 !important;
+}
+
+.mdl-data-table {
+	width: 100%;
+}
+
+.mdl-data-table__cell--toggle {
+	width: 36px;
+}
+
+.mdl-form {
+	padding: 24px;
+}
+
+.mdl-field {
+	padding: 0px;
+}
+
+.mdl-field .mdl-cell {
+	margin: 0px;
+}
+
+.mdl-field .mdl-textfield {
+	width: 100%;
+}
+
+.mdl-segment {
+	width: 100%;
+	height: 128px;
+	background: #3F51B5;
+}
+
+.mdl-segment__space {
+	margin-top: 36px;
+	padding: 0px 24px;
+}
+
+.mdl-segment__header {
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 36px;
+	height: 64px;
+}
+
+.mdl-segment__header p {
+	color: #FFFFFF;
+	font-size: 36px;
+	margin-top: 32px;
+	padding-left: 72px; 
+	padding-right: 72px;
+}
+
+.mdl-segment__nav {
+	padding-left: 36px;
+	padding-right: 36px;
+	height: 64px;
+}
+
+.mdl-divider {
+	width: 100%;
+	height: 1px;
+	background: #CECECE;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

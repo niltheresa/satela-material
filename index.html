@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Google Material Layout</title>
+	<!-- Start of assets -->
+	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+	<link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="bower_components/material-design-lite/material.min.js"></script>
+	<!-- End of assets -->
+</head>
+<body>
+
+	<div class="mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--seamed">
+			<div class="mdl-layout-icon"></div>
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout__title">Stella Material</span>
+				<div class="mdl-layout-spacer"></div>
+				<!-- <nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#">Link</a>
+				</nav> -->
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout__title">Navigation</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#">Nav Menu</a>
+			</nav>
+		</div>
+
+		<div class="mdl-segment">
+			<div class="mdl-segment__header">
+				<p>Documents <i class="material-icons">keyboard_arrow_right</i> Modules</p>
+			</div>
+			<div class="mdl-segment__nav">
+				<a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="form.html">
+					<i class="material-icons">add</i>
+				</a>
+			</div>
+		</div>
+
+		<main class="mdl-layout__content">
+			<div class="mdl-grid mdl-segment__space">
+				<div class="mdl-cell mdl-cell--12-col">
+					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--toggle">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</th>
+								<th class="mdl-data-table__cell--non-numeric">No</th>
+								<th class="mdl-data-table__cell--non-numeric">Name</th>
+								<th class="mdl-data-table__cell--non-numeric">Description</th>
+								<th class="mdl-data-table__cell--non-numeric" style="width: 200px;">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="mdl-data-table__cell--toggle">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">1</td>
+								<td class="mdl-data-table__cell--non-numeric">Employee</td>
+								<td class="mdl-data-table__cell--non-numeric">Base data of employees in application.</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="form.html">
+										<i class="material-icons">mode_edit</i>
+										Edit
+									</a>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+										<i class="material-icons">delete</i>
+										Delete
+									</button>
+								</td>
+							</tr>
+							<tr class="is-selected">
+								<td class="mdl-data-table__cell--toggle">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">2</td>
+								<td class="mdl-data-table__cell--non-numeric">Attendance</td>
+								<td class="mdl-data-table__cell--non-numeric">Record of attendance every employees.</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+										<i class="material-icons">mode_edit</i>
+									</button>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+										<i class="material-icons">delete</i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "Google Material Layout",
+  "authors": [
+    "Ipul <ipulrvs@gmail.com>"
+  ],
+  "description": "Application Template",
+  "main": "index.html",
+  "keywords": [
+    "template",
+    "layout",
+    "theme"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/niltheresa",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3",
+    "sweetalert": "^1.1.3"
+  }
+}
