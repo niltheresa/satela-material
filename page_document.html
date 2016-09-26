@@ -1,0 +1,393 @@
+<html>
+<head>
+	<title>Satella Material</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Method: Refresh every Second ! -->
+	<!-- <meta http-equiv="refresh" content="1"> -->
+	<!-- Method: Refresh every Second ! -->
+
+	<!-- Source: Material MDL CSS -->
+	<link rel="stylesheet" type="text/css" href="bower_components/material-design-lite/material.css">
+	<!-- Source: Material MDL CSS -->
+
+	<!-- Source: Material MDL FONT -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Source: Material MDL FONT -->
+
+	<!-- Source: Material MDL Javascript -->
+	<script src="bower_components/material-design-lite/material.js"></script>
+	<!-- Source: Material MDL Javascript -->
+
+	<!-- Source: Modified Style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Source: Modified Style -->
+
+	<!-- Source: Plugins -->
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/getmdl-select/getmdl-select.min.css">
+	<script src="bower_components/getmdl-select/getmdl-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+	<script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/mfb/src/mfb.css">
+	<script src="node_modules/mfb/src/mfb.js"></script>
+
+	<script src="main.js"></script>
+	<!-- Source: Plugins -->
+</head>
+<body>
+
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"> <!-- Description: Basic Layout Tags -->
+		<header class="mdl-layout__header mdl-layout__header--seamed"> <!-- Description: Main Header Tags -->
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout__title">Document</span>
+				<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+							Link 1
+						</button>
+					</a>
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+							Link 2
+						</button>
+					</a>
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-icon-button">
+							<i class="material-icons">add</i> Link
+						</button> 
+					</a>
+				</nav>
+				<nav class="mdl-navigation mdl-layout--small-screen-only">
+					<button id="shortcut_menu" class="mdl-button mdl-js-button mdl-button--icon">
+						<i class="material-icons">more_vert</i>
+					</button>
+				</nav>
+			</div>
+			<!-- Description: Space Header Tags -->
+			<div class="mdl-layout__header-row mdl-layout--fixed-header"></div>
+			<div class="mdl-layout__header-row mdl-layout--fixed-header mdl-layout--paper-header">
+				<ul class="mdl-breadcrumb">
+					<li>Application</li>
+					<li><i class="material-icons">keyboard_arrow_right</i></li>
+					<li class="active">Document</li>
+				</ul>
+				<div class="mdl-layout-spacer"></div>
+				<form class="mdl-hide__phone">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+						<label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+							<i class="material-icons">search</i>
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<input class="mdl-textfield__input" type="text" id="search">
+						</div>
+					</div>
+				</form>
+				<button class="mdl-button mdl-js-button mdl-button--icon mdl-hide__phone">
+					<i class="material-icons">filter_list</i>
+				</button>
+				<button id="filter_item" class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">apps</i>
+				</button>
+			</div>
+			<div class="mdl-layout__header-row mdl-layout--fixed-header"></div>
+			<!-- Description: Space Header Tags -->
+		</header> <!-- Description: Main Header Tags -->
+		<div class="mdl-layout__drawer mdl-layout__drawer-inverted mdl-layout__drawer-fixed"> <!-- Description: Sidebar -->
+			<div class="mdl-card mdl-card__account"><!-- Description: Account Box -->
+				<div class="mdl-card__menu">
+					<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" href="index.html">
+						<i class="material-icons">arrow_back</i>
+					</a>
+				</div>
+				<div class="mdl-card__title">
+					 <h2 class="mdl-card__title-text">&nbsp</h2>
+				</div>
+				<div class="mdl-card__avatar">
+					<div class="mdl-card__avatar-image">
+						<img src="logo.png">
+					</div>
+					<div class="mdl-card__avatar-text">
+						Acep Muhamad Saepuloh
+					</div>
+				</div>
+				<div class="mdl-card__actions mdl-card--border mdl-text-center">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						<i class="material-icons">account_box</i> Admin
+					</a>
+					<!-- <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-floated__right">
+						<i class="material-icons">more_vert</i>
+					</button> -->
+				</div>
+			</div><!-- Description: Account Box -->
+			<div class="mdl-list mdl-list__navigation">
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">description</i>
+						<span>Document</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<span class="mdl-list__item-primary-content">
+						<i class="material-icons mdl-list__item-icon">list</i>
+						<span>Menu</span>
+					</span>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<span class="mdl-list__item-primary-content">
+						<i class="material-icons mdl-list__item-icon">reorder</i>
+						<span>Sub Menu</span>
+					</span>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">clear_all</i>
+						<span>Others</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">clear_all</i>
+						<span>Others</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">clear_all</i>
+						<span>Others</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">clear_all</i>
+						<span>Others</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">clear_all</i>
+						<span>Others</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
+			</div>
+		</div><!-- Description: Sidebar -->
+
+		<main class="mdl-layout__content mdl-layout__paper animated bounceInUp"><!-- Description: Content -->
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--12-col"> <!-- Description: Dynamic Filter -->
+					<div class="mdl-card  mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text"><i class="material-icons">filter_list</i> Dynamic Filter</h2>
+						</div>
+						<div class="mdl-card__supporting-text mdl-filter__container">
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--1-col mdl-cell--12-col-tablet mdl-align__middle " style="padding-top: 14px;">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+										<i class="material-icons">clear</i>
+									</button>
+								</div>
+								<div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
+									<div class="form">
+										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+											<input class="mdl-textfield__input" value="" type="text" id="filterOne" tabIndex="-1"/>
+												<label class="mdl-textfield__label" for="filterOne">Find</label>
+												<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="filterOne">
+													<li class="mdl-menu__item" data-val="BLR">Name</li>
+													<li class="mdl-menu__item" data-val="RUS">Description</li>
+													<li class="mdl-menu__item" data-val="RUS">Id</li>
+												</ul>
+										</div>
+									</div>
+								</div>
+								<div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<label class="mdl-textfield__label" for="filterOneInput">Value</label>
+										<input class="mdl-textfield__input" type="text" id="filterOneInput">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mdl-card__actions mdl-card--border mdl-hide__phone">
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Add Filter
+							</a>
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Clear
+							</a>
+							<a class="mdl-button mdl-icon-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-floated__right">
+								<i class="material-icons">search</i>
+							</a>
+						</div>
+						<div class="mdl-card__actions mdl-card--border mdl-show__phone">
+							<a id="dynamic_search_phone" class="mdl-button mdl-icon-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-floated__right">
+								<i class="material-icons">more_horiz</i>
+							</a>
+						</div>
+					</div>
+				</div> <!-- Description: Dynamic Filter -->
+				<div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mdl-data-table__container"> <!-- Description: List Table -->
+					<table class="mdl-data-table mdl-js-data-table">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</th>
+								<th class="mdl-data-table__cell--non-numeric">ID</th>
+								<th class="mdl-data-table__cell--non-numeric">Document Name</th>
+								<th class="mdl-data-table__cell--non-numeric">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a>1001</a>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">Document</td>
+								<td class="mdl-data-table__cell--non-numeric">Application that describe each Application Modules</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a>1002</a>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">Menu</td>
+								<td class="mdl-data-table__cell--non-numeric">List of Main Menu for accessing Application Modules</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+										<input type="checkbox" class="mdl-checkbox__input">
+									</label>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a>1003</a>
+								</td>
+								<td class="mdl-data-table__cell--non-numeric">Submenu</td>
+								<td class="mdl-data-table__cell--non-numeric">List of Submenu child of Menu for esay access selected Modules</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Description: List Table -->
+				<!-- Description: Pagination -->
+				<div class="mdl-cell mdl-cell--12-col">
+					<ul class="mdl-pagination mdl-align__middle">
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+								<i class="material-icons">chevron_left</i>
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								1
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								2
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								3
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								4
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								5
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								...
+							</button>
+						</li>
+						<li>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+								<i class="material-icons">chevron_right</i>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<!-- Description: Pagination -->
+			</div>
+		</main><!-- Description: Content -->
+		
+	</div> <!-- Description: Basic Layout Tags -->
+
+	<ul data-mfb-toggle="click" data-mfb-state="closed" class="mfb-component--br mfb-slidein" id="main_button">
+		<li class="mfb-component__wrap">
+			<a class="mfb-component__button--main" href="#">
+				<i class="material-icons">donut_large</i>
+				<i class="material-icons mfb-component__main-icon--active">donut_large</i>
+			</a>
+			<ul class="mfb-component__list">
+				<li>
+					<a class="mfb-component__button--child" data-mfb-label="NEW">
+ 						<i class="material-icons mfb-component__child-icon">add</i>
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<!-- Description: Dropdown Menu Icon #shortcut_menu -->
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="shortcut_menu">
+		<li class="mdl-menu__item mdl-menu__item-icon"><i class="material-icons">add</i> Link 1</li>
+		<li class="mdl-menu__item">Link 2</li>
+		<li disabled class="mdl-menu__item">Link 3</li>
+	</ul>
+	<!-- Description: Dropdown Menu Icon #shortcut_menu -->
+
+	<!-- Description: Dropdown Menu Icon #filter_item -->
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="filter_item">
+		<li class="mdl-menu__item mdl-menu__item-icon mdl-show__phone"><i class="material-icons">search</i> Search</li>
+		<li class="mdl-menu__item mdl-menu__item-icon mdl-show__phone"><i class="material-icons">filter_list</i> Dynamic Search</li>
+		<li class="mdl-menu__item-divider mdl-show__phone"></li>
+		<li class="mdl-menu__item mdl-menu__item-icon"><i class="material-icons">autorenew</i> Filter 0</li>
+		<li class="mdl-menu__item-divider"></li>
+		<li class="mdl-menu__item mdl-menu__item-icon"><i class="material-icons">sort</i> Filter 1</li>
+		<li class="mdl-menu__item">Filter 2</li>
+		<li disabled class="mdl-menu__item">Filter 3</li>
+	</ul>
+	<!-- Description: Dropdown Menu Icon #filter_item -->
+
+	<!-- Description: Dropdown Menu Icon #dynamic_search_phone -->
+	<ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="dynamic_search_phone">
+		<li class="mdl-menu__item mdl-menu__item-icon mdl-show__phone"><i class="material-icons">search</i> Search</li>
+		<li class="mdl-menu__item-divider"></li>
+ 		<li class="mdl-menu__item">Add Filter</li>
+ 		<li class="mdl-menu__item">Clear</li>
+	</ul>
+	<!-- Description: Dropdown Menu Icon #dynamic_search_phone -->
+
+</body>
+</html>

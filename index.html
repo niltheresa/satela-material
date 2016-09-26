@@ -1,111 +1,148 @@
 <html>
 <head>
-	<title>Google Material Layout</title>
-	<!-- Start of assets -->
-	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
-	<link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="style.css">
+	<title>Satella Material</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="bower_components/material-design-lite/material.min.js"></script>
-	<!-- End of assets -->
+	<!-- Method: Refresh every Second ! -->
+	<!-- <meta http-equiv="refresh" content="1"> -->
+	<!-- Method: Refresh every Second ! -->
+
+	<!-- Source: Material MDL CSS -->
+	<link rel="stylesheet" type="text/css" href="bower_components/material-design-lite/material.css">
+	<!-- Source: Material MDL CSS -->
+
+	<!-- Source: Material MDL FONT -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Source: Material MDL FONT -->
+
+	<!-- Source: Material MDL Javascript -->
+	<script src="bower_components/material-design-lite/material.js"></script>
+	<!-- Source: Material MDL Javascript -->
+
+	<!-- Source: Modified Style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Source: Modified Style -->
+
+	<!-- Source: Plugins -->
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/getmdl-select/getmdl-select.min.css">
+	<script src="bower_components/getmdl-select/getmdl-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+	<script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/mfb/src/mfb.css">
+	<script src="node_modules/mfb/src/mfb.js"></script>
+
+	<script src="main.js"></script>
+	<!-- Source: Plugins -->
 </head>
 <body>
 
-	<div class="mdl-layout mdl-js-layout">
-		<header class="mdl-layout__header mdl-layout__header--seamed">
-			<div class="mdl-layout-icon"></div>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"> <!-- Description: Basic Layout Tags -->
+		<header class="mdl-layout__header mdl-layout__header--seamed"> <!-- Description: Main Header Tags -->
 			<div class="mdl-layout__header-row">
-				<span class="mdl-layout__title">Stella Material</span>
+				<span class="mdl-layout__title">Application Name</span>
 				<div class="mdl-layout-spacer"></div>
-				<!-- <nav class="mdl-navigation">
-					<a class="mdl-navigation__link" href="#">Link</a>
-				</nav> -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+							Link 1
+						</button>
+					</a>
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+							Link 2
+						</button>
+					</a>
+					<a class="mdl-navigation__link" href="#">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-icon-button">
+							<i class="material-icons">add</i> Link
+						</button> 
+					</a>
+				</nav>
+				<nav class="mdl-navigation mdl-layout--small-screen-only">
+					<button id="shortcut_menu" class="mdl-button mdl-js-button mdl-button--icon">
+						<i class="material-icons">more_vert</i>
+					</button>
+				</nav>
 			</div>
-		</header>
-
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout__title">Navigation</span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#">Nav Menu</a>
-			</nav>
-		</div>
-
-		<div class="mdl-segment">
-			<div class="mdl-segment__header">
-				<p>Documents <i class="material-icons">keyboard_arrow_right</i> Modules</p>
+			<!-- Description: Space Header Tags -->
+			<div class="mdl-layout__header-row mdl-layout--fixed-header"></div>
+			<div class="mdl-layout__header-row mdl-layout--fixed-header mdl-layout--paper-header">
+				<ul class="mdl-breadcrumb">
+					<li>Application</li>
+					<li><i class="material-icons">keyboard_arrow_right</i></li>
+					<li class="active">Dashboard</li>
+				</ul>
 			</div>
-			<div class="mdl-segment__nav">
-				<a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="form.html">
-					<i class="material-icons">add</i>
-				</a>
+			<div class="mdl-layout__header-row mdl-layout--fixed-header"></div>
+			<!-- Description: Space Header Tags -->
+		</header> <!-- Description: Main Header Tags -->
+		<div class="mdl-layout__drawer mdl-layout__drawer-inverted"> <!-- Description: Sidebar -->
+			<div class="mdl-card mdl-card__account"><!-- Description: Account Box -->
+				<div class="mdl-card__title">
+					 <h2 class="mdl-card__title-text">&nbsp</h2>
+				</div>
+				<div class="mdl-card__avatar">
+					<div class="mdl-card__avatar-image">
+						<img src="logo.png">
+					</div>
+					<div class="mdl-card__avatar-text">
+						Acep Muhamad Saepuloh
+					</div>
+				</div>
+				<div class="mdl-card__actions mdl-card--border mdl-text-center">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						<i class="material-icons">account_box</i> Admin
+					</a>
+					<!-- <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-floated__right">
+						<i class="material-icons">more_vert</i>
+					</button> -->
+				</div>
+			</div><!-- Description: Account Box -->
+			<div class="mdl-list mdl-list__navigation">
+				<div class="mdl-list__item">
+					<a class="mdl-list__item-primary-content" href="page_document.html">
+						<i class="material-icons mdl-list__item-icon">description</i>
+						<span>Document</span>
+					</a>
+					<!-- <a class="mdl-list__item-secondary-action">0</a> -->
+				</div>
 			</div>
-		</div>
+		</div><!-- Description: Sidebar -->
 
-		<main class="mdl-layout__content">
-			<div class="mdl-grid mdl-segment__space">
+		<main class="mdl-layout__content mdl-layout__paper animated bounceInUp">
+			<div class="mdl-grid">
 				<div class="mdl-cell mdl-cell--12-col">
-					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-						<thead>
-							<tr>
-								<th class="mdl-data-table__cell--toggle">
-									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-										<input type="checkbox" class="mdl-checkbox__input">
-									</label>
-								</th>
-								<th class="mdl-data-table__cell--non-numeric">No</th>
-								<th class="mdl-data-table__cell--non-numeric">Name</th>
-								<th class="mdl-data-table__cell--non-numeric">Description</th>
-								<th class="mdl-data-table__cell--non-numeric" style="width: 200px;">Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="mdl-data-table__cell--toggle">
-									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-										<input type="checkbox" class="mdl-checkbox__input">
-									</label>
-								</td>
-								<td class="mdl-data-table__cell--non-numeric">1</td>
-								<td class="mdl-data-table__cell--non-numeric">Employee</td>
-								<td class="mdl-data-table__cell--non-numeric">Base data of employees in application.</td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" href="form.html">
-										<i class="material-icons">mode_edit</i>
-										Edit
-									</a>
-									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-										<i class="material-icons">delete</i>
-										Delete
-									</button>
-								</td>
-							</tr>
-							<tr class="is-selected">
-								<td class="mdl-data-table__cell--toggle">
-									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-										<input type="checkbox" class="mdl-checkbox__input">
-									</label>
-								</td>
-								<td class="mdl-data-table__cell--non-numeric">2</td>
-								<td class="mdl-data-table__cell--non-numeric">Attendance</td>
-								<td class="mdl-data-table__cell--non-numeric">Record of attendance every employees.</td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-										<i class="material-icons">mode_edit</i>
-									</button>
-									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-										<i class="material-icons">delete</i>
-									</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="mdl-card  mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Welcome to Satella Material</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Satella Material is one of modified application theme base on material google design under working mdl framework.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a class="mdl-button mdl-icon-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-floated__right" href="page_document.html">
+								GET STARTED
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
-	</div>
-	
+
+	</div> <!-- Description: Basic Layout Tags -->
+
+	<!-- Description: Dropdown Menu Icon #shortcut_menu -->
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="shortcut_menu">
+		<li class="mdl-menu__item mdl-menu__item-icon"><i class="material-icons">add</i> Link 1</li>
+		<li class="mdl-menu__item">Link 2</li>
+		<li disabled class="mdl-menu__item">Link 3</li>
+	</ul>
+	<!-- Description: Dropdown Menu Icon #shortcut_menu -->
+
 </body>
 </html>

@@ -1,14 +1,14 @@
 {
-  "name": "Google Material Layout",
+  "name": "stella",
   "authors": [
     "Ipul <ipulrvs@gmail.com>"
   ],
-  "description": "Application Template",
+  "description": "Material Admin Theme",
   "main": "index.html",
   "keywords": [
-    "template",
-    "layout",
-    "theme"
+    "theme",
+    "css",
+    "web"
   ],
   "license": "MIT",
   "homepage": "http://github.com/niltheresa",
@@ -21,7 +21,9 @@
     "tests"
   ],
   "dependencies": {
-    "material-design-lite": "^1.1.3",
-    "sweetalert": "^1.1.3"
+    "material-design-lite": "^1.2.0",
+    "animate.css": "^3.5.2",
+    "getmdl-select": "*",
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
   }
 }
